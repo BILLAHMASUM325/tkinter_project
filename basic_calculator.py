@@ -1,6 +1,7 @@
 from tkinter import*
 root = Tk()
 root.title("calculator")
+
 entry = Entry(root, width = 35, borderwidth = 5)
 entry.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 entry.focus_set()
@@ -49,7 +50,7 @@ def button_div():
 def button_equal():
     sec_number = entry.get()
     entry.delete(0,END)
-    if math == "additon":
+    if math == "addition":
         entry.insert(0,int(f_number) + int(sec_number))
     elif math == "substraction":
         entry.insert(0, int(f_number) - int(sec_number))
