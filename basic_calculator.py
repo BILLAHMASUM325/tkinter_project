@@ -1,6 +1,6 @@
 from tkinter import*
 root = Tk()
-root.title("calculator")
+root.title("calculators")
 
 entry = Entry(root, width = 35, borderwidth = 5)
 entry.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
